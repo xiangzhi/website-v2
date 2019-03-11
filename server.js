@@ -16,20 +16,22 @@ app.set('views', path.join(__dirname, 'public/views')) //set where to find the i
 
 //point no directory to the main page
 app.get('/', function(req, res){
-    res.render('index')
+    res.render('index',{title:"PhD Student"})
 })
 
 app.get('/research/:projectname', function(req, res){
     
     file_name = req.params.projectname
-    res.render('research-projects/' + file_name)
+    title_name = file_name.split('-').join(' ')
+    res.render('research-projects/' + file_name, {title:title_name})
     //console.log(req)
 })
 
 app.get('/papers/:papername', function(req, res){
     
     file_name = req.params.papername
-    res.render('papers/' + file_name)
+    title_name = file_name.split('-').join(' ')
+    res.render('papers/' + file_name, {title:title_name})
     //console.log(req)
 })
 
