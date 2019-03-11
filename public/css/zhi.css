@@ -1,0 +1,105 @@
+.research-box{
+    position: relative;
+    height:auto;
+    min-height: 100%;
+}
+
+.research_image_wrap {
+    position: relative;
+    height:225px;
+    width:300px;
+    margin: 2%;
+}
+.me-bio{
+    padding: 10%
+}
+
+.me-img{
+    bottom: 0;
+}
+
+.me-border{
+    background-color: #bfbfbf;
+    min-height: 100%;
+}
+
+.page-spacers{
+    min-height: 100px;
+}
+
+.nav-head-spacer{
+    min-height: 100px;
+}
+
+.research_image_description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background: #69696999;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    transition: opacity .2s, visibility .2s;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration:none;
+}
+
+.research_image{
+    max-width:300px;
+    max-height:225px;
+}
+
+.research_image_wrap:hover .research_image_description{
+    visibility: visible;
+    opacity: 1;
+}
+
+.footer-local{
+    background: #F8F9FA;
+}
+
+.bottom-align-text-wrapper {
+    position: relative;
+}
+.bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+
+.research-title {
+    margin-top: 0%;
+}
+
+.research-badge{
+    margin-bottom: 0;
+    margin-top:5%;
+}
+
+.paper-img{
+    height:50%;
+    width: auto;
+}
+
+.research-main-img{
+    height:50%;
+}
+
+.CV-big{
+    background-color: #393939;
+}
+
+.cv-text{
+    color: #ffffff;
+}
