@@ -1,0 +1,28 @@
+<h1>Research Projects</h1>
+
+<h3>Current Projects</h3>
+
+  {{#each projects.current}}
+    <div class="row home-research-items">
+      <div class="col-3">
+        <img class="home-research-image" src="{{this.img_path}}" />
+      </div>
+      <div class="col-9">
+      <h5><a href="{{this.link}}">{{this.title}}</a></h5>
+      </div>
+    </div>
+  {{/each}}
+
+
+<h3>Past Projects</h3>
+
+  {{#each projects.past}}
+    <div class="row home-research-items">
+      <div class="col-3">
+        <img class="home-research-image" src="{{this.img_path}}" />
+      </div>
+      <div class="col-9">
+      <h5><a href="{{this.link}}">{{this.title}}</a></h5>
+      </div>
+    </div>
+  {{/each}}

@@ -50,7 +50,7 @@
 }
 
 a:hover {
-    color: #fff;
+    /* color: #fff; */
     text-decoration:none;
 }
 
@@ -102,4 +102,25 @@ a:hover {
 
 .cv-text{
     color: #ffffff;
+}
+
+.content-container{
+    min-height: 100%;
+}
+
+.news-items{
+    padding: 0.5%;
+}
+
+.main-padding{
+    padding-top: 50px;
+}
+
+.home-research-image{
+    max-width:100%;
+    border-radius: 5%;
+}
+
+.home-research-items{
+    padding-top: 1%;
 }

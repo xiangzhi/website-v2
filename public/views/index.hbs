@@ -1,74 +1,48 @@
-<header>
-    {{> navbar}}
-</header>
-
-<div id="Home" class="nav-head-spacer" style="background-color: #bfbfbf"></div>
 <div class="row me-border">
-    <div class="col-7">
-        <h2 style="margin:10%;margin-bottom:0%">Xiang Zhi Tan (Zhi)</h2>
-        <p class="me-bio" style="padding-top:1%">I'm a computer scientist, HRI Researcher, and PhD student at Carnegie Mellon University. I'm
-            part of the Robotics Institute and advised by <a href="http://www.cs.cmu.edu/~astein/">Aaron Steinfeld</a>.
-            My work focuses on exploring how humans interact with multiple robots by building systems and tools that
-            enable these interactions.</p>
+  <div class="col-7">
+    <h2 style="margin:10%;margin-bottom:0%">Xiang Zhi Tan (Zhi)</h2>
+    <p class="me-bio" style="padding-top:1%">I'm a computer scientist, HRI Researcher, and PhD student at Carnegie
+      Mellon University. I'm
+      part of the Robotics Institute and advised by <a href="http://www.cs.cmu.edu/~astein/">Aaron Steinfeld</a>.
+      My work focuses on exploring how humans interact with multiple robots by building systems and tools that
+      enable these interactions.</p>
+  </div>
+  <div class="col-5 ">
+    <div style="position:relative">
+      <img src="resource/me-robot4.jpg" class="img-fluid me-img" />
     </div>
-    <div class="col-5 ">
-        <div style="position:relative">
-            <img src="resource/me-robot4.jpg" class="img-fluid me-img" />
-        </div>
-    </div>
+  </div>
 </div>
-<div class="page-spacers" id="Research"></div>
-<div class="container">
-    <div class="row research-box">
-        <div class="col-12">
-            <h3>Current Research Projects</h3>
-        </div>
-        <div class="research_image_wrap">
-            <img class="research_image" src="resource/research-icon/hri19-handover.jpg" />
-            <a href="research/robot-transition" class="research_image_description">How Robot-Robot Interaction Affects
-                Users’ Perceptions Following a Transition Between Robots</a>
-        </div>
 
-        <div class="research_image_wrap">
-            <img class="research_image" src="resource/research-icon/reembodiment.jpg" />
-            <a href="http://www.michalluria.com/index.php/portfolio/agent-re-embodiment/"
-                class="research_image_description">Robot-ReEmbodiment (with Michal Luria + Sam Reig)</a>
-        </div>
-
-
-        <div class="research_image_wrap">
-            <img class="research_image" src="resource/research-icon/hri18-robot-abuse.jpg" />
-            <a href="research/robot-abuse" class="research_image_description">Inducing Bystander Intervention
-                During Robot Abuse</a>
-        </div>
-
-        <div class="research_image_wrap">
-            <img class="research_image" src="resource/research-icon/assistive-robots.jpg" />
-            <a href="research/assistive-robots" class="research_image_description">Assistive Robots for People with
-                Visual Impairments</a>
-        </div>
-
-    </div>
-</div>
-<div class="page-spacers" id="CV"></div>
-<div class="pt-5 pb-5 CV-big cv-text">
-<div class="container">
-    <div class="row">
-    <div class="col-12">
-        <h3>Curriculum Vitae</h3>
+<div class="row" style="padding-top: 5%;">
+  <div class="col-7">
+    <div>
+      <h3>Current Research Projects</h3>
     </div>
 
-    <div class="col-5 pt-5">
-    <h4>Education</h4>
-    <ul class="list-unstyled">
-        <li>Carnegie Mellon University, PhD, (In progress)</li>
-        <li>Carnegie Mellon University, M.S., 2017</li>
-        <li>University of Wisconsin Madison, B.S., 2015</li>
+    {{#each projects}}
+    <div class="row home-research-items">
+      <div class="col-3">
+        <img class="home-research-image" src="{{this.img_path}}" />
+      </div>
+      <div class="col-9">
+        <a href="{{this.link}}">{{this.title}}</a>
+      </div>
+    </div>
+    {{/each}}
+    <p class="pt-2 pb-2" style="text-align:center;">
+      <a href="/research">More & Past Research Projects</a>
+    </p>
+  </div>
+  <div class="col-5">
+    <h3>Latest News </h3>
+    <ul>
+      {{#each news}}
+      <li class="news-items"><strong>[{{this.date}}]</strong> {{this.message}}</li>
+      {{/each}}
     </ul>
-    </div>
-    <div class="col-7">
-        <embed src="resource/cv.pdf" type="application/pdf" width="100%" height="600px" />
-    </div>
-    </div>
-    </div>
+    <p class="pt-2 pb-2" style="text-align:center;">
+      <a href="/news">More News</a>
+    </p>
+  </div>
 </div>

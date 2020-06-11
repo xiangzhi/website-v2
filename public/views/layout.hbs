@@ -6,41 +6,54 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Xiang Zhi Tan">
-  <meta name="description" content="I'm a computer scientist, HRI Researcher, and PhD student at Carnegie Mellon University">
+  <meta name="description"
+    content="I'm a computer scientist, HRI Researcher, and PhD student at Carnegie Mellon University">
   <meta name="keywords" content="Human-Robot Interaction, Robots, HRI, Zhi, Zhi Tan">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-  crossorigin="anonymous">
-  {{!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> --}}
+  {{!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous"> --}}
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/zhi.css">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49284460-4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49284460-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-49284460-4');
-</script>
+    gtag('config', 'UA-49284460-4');
+  </script>
   <title>Zhi Tan | {{title}}</title>
 </head>
 
 <body>
-  {{{body}}}
+  {{> header}}
+  <main class="main-padding">
+    <div class="container content-container">
+      {{{body}}}
+    </div>
+  </main>
   {{> footer}}
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  {{!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  {{!-- <script src="/js/jquery-3.3.1.min.js"></script>
-  <script src="/js/popper.min.js"></script>
-  <script src="/js/bootstrap.bundle.min.js"></script> --}}
+    crossorigin="anonymous"></script> --}}
+  <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Copied from 
+    // https://gist.github.com/daverogers/5375778
+    $(document).ready(function () {
+      // get current URL path and assign 'active' class
+      var pathname = window.location.pathname.toLowerCase();
+      $('nav > div > ul > li > a[href="' + pathname + '"]').parent().addClass('active');
+    
+    })
+  </script>
 
 </body>
 

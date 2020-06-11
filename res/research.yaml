@@ -1,0 +1,14 @@
+current:
+  - link: "research/assistive-robots"
+    img_path: "resource/research-icon/assistive-robots.jpg"
+    title: "Assistive Robots for People with Visual Impairments"
+  - link: "research/robot-transition"
+    img_path: "resource/research-icon/hri19-handover.jpg"
+    title: "Transferring User Interaction Between Multiple Robots"
+past:
+  - link: "http://www.michalluria.com/index.php/portfolio/agent-re-embodiment/"
+    img_path: "resource/research-icon/reembodiment.jpg"
+    title: "Robot-ReEmbodiment (with Michal Luria + Sam Reig)"
+  - link: "research/robot-abuse"
+    img_path: "resource/research-icon/hri18-robot-abuse.jpg"
+    title: "Inducing Bystander Intervention During Robot Abuse"

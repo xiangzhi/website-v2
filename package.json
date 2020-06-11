@@ -1,6 +1,6 @@
 {
   "name": "zhi-fyi-website",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Website for zhi.fyi",
   "main": "server.js",
   "scripts": {
@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/xiangzhi/website-v2#readme",
   "dependencies": {
-    "express": "^4.16.4",
-    "hbs": "^4.0.1"
+    "citation-js": "^0.5.0-alpha.4",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.2",
+    "hbs": "^4.1.0",
+    "js-yaml": "^3.13.1"
   }
 }
