@@ -4,24 +4,23 @@
 
   {{#each projects.current}}
     <div class="row home-research-items">
-      <div class="col-3">
+      <div class="col-2 research-icon">
         <img class="home-research-image" src="{{this.img_path}}" />
       </div>
-      <div class="col-9">
+      <div class="col-10">
       <h5><a href="{{this.link}}">{{this.title}}</a></h5>
       </div>
     </div>
   {{/each}}
 
-
+<div style="height: 10%;"></div>
 <h3>Past Projects</h3>
-
   {{#each projects.past}}
     <div class="row home-research-items">
-      <div class="col-3">
+      <div class="col-2 research-icon">
         <img class="home-research-image" src="{{this.img_path}}" />
       </div>
-      <div class="col-9">
+      <div class="col-10">
       <h5><a href="{{this.link}}">{{this.title}}</a></h5>
       </div>
     </div>

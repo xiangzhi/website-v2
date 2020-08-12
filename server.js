@@ -75,11 +75,33 @@ full_paper_text_arr = ParsingCitation(full_paper_file, 'C', "badge badge-primary
 lbr_file = fs.readFileSync(path.join(__dirname, 'res/lbr.bib'), 'utf8')
 lbr_text_arr = ParsingCitation(lbr_file, 'R', "badge badge-secondary")
 
+const paper_yaml_doc = yaml.safeLoad(fs.readFileSync('res/papers.yaml', 'utf8'));
+var paper_text_arr = []
+console.log(paper_yaml_doc.papers.length)
+paper_num = paper_yaml_doc.papers.length
+for(var i = 0; i < paper_yaml_doc.papers.length; i++){
+    html_text = "<div class='publication-paper'><span class='badge badge-primary'>C" + 
+        paper_num + ". </span> " + paper_yaml_doc.papers[i].name + "</br>"
+    if ("code" in paper_yaml_doc.papers[i]){
+        if ("icon" in paper_yaml_doc.papers[i].code){
+            html_text += "<img class='code-badge' alt='" + paper_yaml_doc.papers[i].code.icon_alt + "' src='"+ paper_yaml_doc.papers[i].code.icon + "'>"
+        }
+        code_text = "Link"
+        if ("text" in paper_yaml_doc.papers[i].code){
+            code_text = paper_yaml_doc.papers[i].code.text
+        }
+        html_text += ("<a href='" + paper_yaml_doc.papers[i].code.link + "'> " + code_text + " </a>")
+    }
+    html_text += "</div>"
+    paper_text_arr.push(html_text)
+    paper_num--
+}
+
 // serve the publication page
 app.get('/publications', function(req, res){
     data = {
         title:"Publications",
-        full: full_paper_text_arr,
+        full: paper_text_arr,
         report: lbr_text_arr
     }
     res.render("publications", data)

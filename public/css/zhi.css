@@ -106,6 +106,7 @@ a:hover {
 
 .content-container{
     min-height: 100%;
+    padding-top: 1%;
 }
 
 .news-items{
@@ -123,4 +124,13 @@ a:hover {
 
 .home-research-items{
     padding-top: 1%;
+    margin-bottom: 1%;
 }
+
+.publication-paper{
+    margin-bottom: 1em;
+}
+.code-badge{
+    height:1.5em;
+}
+
