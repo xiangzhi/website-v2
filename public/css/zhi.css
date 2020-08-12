@@ -64,7 +64,14 @@ a:hover {
     opacity: 1;
 }
 
-.footer-local{
+.footer{
+    position: absolute;
+    bottom: 0;
+    margin-top: 60px;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
     background: #F8F9FA;
 }
 
@@ -105,6 +112,7 @@ a:hover {
 }
 
 .content-container{
+    margin-top: 1em;
     min-height: 100%;
     padding-top: 1%;
 }
@@ -115,6 +123,7 @@ a:hover {
 
 .main-padding{
     padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .home-research-image{
@@ -134,3 +143,13 @@ a:hover {
     height:1.5em;
 }
 
+}
+
+.badge{
+    padding: .4em .6em;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
