@@ -63,14 +63,11 @@ function ParsingCitation(file, prefix, class_name){
     arr.pop()
     var count = 1;
     for( var i = arr.length - 1; i >= 0 ; i--){
-        arr[i] = "<p><span class='" + class_name + "'>" + prefix + count + ". </span> " + arr[i] + "</p>"
+        arr[i] = "<p class='publication-item'><span class='" + class_name + "'>" + prefix + count + ". </span> " + arr[i] + "</p>"
         count++
     }
     return arr 
 }
-
-full_paper_file = fs.readFileSync(path.join(__dirname, 'res/papers.bib'), 'utf8')
-full_paper_text_arr = ParsingCitation(full_paper_file, 'C', "badge badge-primary")
 
 lbr_file = fs.readFileSync(path.join(__dirname, 'res/lbr.bib'), 'utf8')
 lbr_text_arr = ParsingCitation(lbr_file, 'R', "badge badge-secondary")
@@ -80,17 +77,30 @@ var paper_text_arr = []
 console.log(paper_yaml_doc.papers.length)
 paper_num = paper_yaml_doc.papers.length
 for(var i = 0; i < paper_yaml_doc.papers.length; i++){
-    html_text = "<div class='publication-paper'><span class='badge badge-primary'>C" + 
+    html_text = "<div class='publication-item'><span class='badge badge-primary'>C" + 
         paper_num + ". </span> " + paper_yaml_doc.papers[i].name + "</br>"
-    if ("code" in paper_yaml_doc.papers[i]){
-        if ("icon" in paper_yaml_doc.papers[i].code){
-            html_text += "<img class='code-badge' alt='" + paper_yaml_doc.papers[i].code.icon_alt + "' src='"+ paper_yaml_doc.papers[i].code.icon + "'>"
-        }
-        code_text = "Link"
-        if ("text" in paper_yaml_doc.papers[i].code){
-            code_text = paper_yaml_doc.papers[i].code.text
-        }
-        html_text += ("<a href='" + paper_yaml_doc.papers[i].code.link + "'> " + code_text + " </a>")
+    
+    // If there are tags with the paper
+    if ("tags" in paper_yaml_doc.papers[i])
+    {
+        paper_yaml_doc.papers[i].tags.forEach(tag => {
+            if ("type" in tag && tag.type == "PDF")
+            {
+                html_text += "<img class='code-badge' alt='PDF Icon' src='resource/pdf.svg'>"
+                html_text += "<a href='" + tag.link + "'> Paper </a>"
+            }
+            else
+            {
+                if ("icon" in tag){
+                    html_text += "<img class='code-badge' alt='" + tag.icon_alt + "' src='"+ tag.icon + "'>"
+                }
+                code_text = "Link"
+                if ("text" in tag){
+                    code_text = tag.text
+                }
+                html_text += ("<a href='" + tag.link + "'> " + code_text + " </a>")
+            }
+        });
     }
     html_text += "</div>"
     paper_text_arr.push(html_text)

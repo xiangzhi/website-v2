@@ -136,9 +136,10 @@ a:hover {
     margin-bottom: 1%;
 }
 
-.publication-paper{
-    margin-bottom: 1em;
+.publication-item{
+    margin-bottom: 1.5em;
 }
+
 .code-badge{
     height:1.5em;
 }

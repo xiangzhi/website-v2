@@ -1,13 +1,7 @@
 news:
-  - date: 2019-05
-    message: Hello World Again  
-  - date: 2019-04
-    message: Hello World Again  
-  - date: 2019-03
-    message: Hello World Again  
-  - date: 2019-02
-    message: Hello World Again
-  - date: 2019-01
-    message: Hello World Again
-  - date: 2018
-    message: Hello World
+  - date: 2021-01
+    message: "Our paper titled:'Charting Sequential Person Transfers Between Devices, Agents, and Robots' was accepted to HRI2021"
+  - date: 2020-10
+    message: Submitted 1 paper to HRI2021.
+  - date: 2019-11
+    message: "Proposed my thesis titled: Transfer Between Multiple Service Robots"

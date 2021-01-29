@@ -1,28 +1,60 @@
 papers:
+  - name: "<b>Tan, X. Z.</b>, Luria, M., Steinfeld, A., & Forlizzi, J. (2021) Charting Sequential Person Transfers Between Devices, Agents, and Robots. In 2021 ACM/IEEE International Conference on Human-Robot Interaction (HRI) Boulder, CO, USA. ACM."
+    year: 2021
+    tags:
+      - link: "resource/PDFs/tan2021-person-transfer-taxonomy.pdf"
+        type: "PDF"
+  - name: "Carter, E. J., Reig, S., <b>Tan, X. Z.</b>, Laput, G., Rosenthal, S., & Steinfeld, A. (2020, March). Death of a Robot: Social Media Reactions and Language Usage when a Robot Stops Operating. In Proceedings of the 2020 ACM/IEEE International Conference on Human-Robot Interaction (pp. 589-597)."
+    year: 2020
+    tags:
+      - link: "resource/PDFs/carter2020-death-robot-tweets.pdf"
+        type: "PDF"
+  - name: "Nanavati, A., <b>Tan, X. Z.</b>, Connolly, J., & Steinfeld, A. (2019, November). Follow The Robot: Modeling Coupled Human-Robot Dyads During Navigation. In 2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)."
+    year: 2019
+    tags:
+      - link: "resource/PDFs/nanavati2019-human-robot-coupled.pdf"
+        type: "PDF"
+      - link: "https://github.com/CMU-TBD/IROS19-Human-Robot-Coupling"
+        icon: "resource/github.png"
+        icon_alt: "github icon"
+        text: "System Code"
   - name: "<b>Tan, X. Z.</b>, Carter, E. J., Reig, S., & Steinfeld, A. (2019). Go That Way: Exploring Supplementary Physical Movements by a Stationary Robot When Providing Navigation Instructions. In The 21st International ACM SIGACCESS Conference on Computers and Accessibility (pp. 299–311). Pittsburgh, PA, USA: ACM. https://doi.org/10.1145/3308561.3353805"
-    code: 
-      link: "https://github.com/CMU-TBD/ASSETS19-Robot-Verbal-Navigation-Gestures"
-      icon: "resource/github.png"
-      icon_alt: "github icon"
-      text: "System Code"
+    tags:
+      - link: "resource/PDFs/tan2019-robot-hand-navigation.pdf"
+        type: "PDF"
+      - link: "https://github.com/CMU-TBD/ASSETS19-Robot-Verbal-Navigation-Gestures"
+        icon: "resource/github.png"
+        icon_alt: "github icon"
+        text: "System Code"
   - name: "Luria, M., Reig, S., <b>Tan, X. Z.</b>, Steinfeld, A., Forlizzi, J., & Zimmerman, J. (2019). Re-Embodiment and Co-Embodiment: Exploration of Social Presence for Robots and Conversational Agents. In Proceedings of the 2019 on Designing Interactive Systems Conference (pp. 633–644). ACM."
+    tags:
+      - link: "resource/PDFs/luria2019-re-embodiment-co-embodiment.pdf"
+        type: "PDF"
   - name: "Morales, C. G., Carter, E. J., <b>Tan, X. Z.</b>, & Steinfeld, A. (2019). Interaction Needs and Opportunities for Failing Robots. In Proceedings of the 2019 on Designing Interactive Systems Conference (pp. 659–670). ACM."
+    tags:
+      - link: "resource/PDFs/morales2019-failing-robots.pdf"
+        type: "PDF"
   - name: "<b>Tan, X. Z.</b>, Reig, S., Carter, E. J., & Steinfeld, A. (2019). From One to Another: How Robot-Robot Interaction Affects Users’ Perceptions Following a Transition Between Robots. In 2019 14th ACM/IEEE International Conference on Human-Robot Interaction (HRI) (pp. 114–122). Daegu, Korea (South): IEEE. https://doi.org/10.1109/HRI.2019.8673304"
-    code:
-      link: "https://github.com/CMU-TBD/HRI19-MultiRobot-Transition-Study"
-      icon: "resource/github.png"
-      icon_alt: "github icon"
-      text: "Study Code"
+    tags:
+      - link: "resource/PDFs/hri19-transition-xiangzhitan.pdf"
+        type: "PDF"
+      - link: "https://github.com/CMU-TBD/HRI19-MultiRobot-Transition-Study"
+        icon: "resource/github.png"
+        icon_alt: "github icon"
+        text: "Study Code"
   - name: "<b>Tan, X. Z.</b>, & Steinfeld, A. (2018). Haptic Interaction for Human-Robot Communication Using a Spherical Robot. In 2018 27th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN) (pp. 732–739). IEEE."
+    tags:
+      - link: "resource/PDFs/roman2018-spherical-robot.pdf"
+        type: "PDF"
   - name: "<b>Tan, X. Z.</b>, Vázquez, Marynel, Carter, E. J., Morales, C. G., & Steinfeld, A. (2018). Inducing Bystander Interventions during Robot Abuse with Social Mechanisms. In Proceedings of the 2018 ACM/IEEE International Conference on Human-Robot Interaction (pp. 169–177). ACM."
-    code:
-      link: "https://github.com/CMU-TBD/HRI18-Bystander-Intervention-Study"
-      icon: "resource/github.png"
-      icon_alt: "github icon"
-      text: "Study Code"
+    tags:
+      - link: "https://github.com/CMU-TBD/HRI18-Bystander-Intervention-Study"
+        icon: "resource/github.png"
+        icon_alt: "github icon"
+        text: "Study Code"
   - name: "Andrist, S., <b>Tan, X. Z.</b>, Gleicher, M., & Mutlu, B. (2014, March). Conversational gaze aversion for humanlike robots. In 2014 9th ACM/IEEE International Conference on Human-Robot Interaction (HRI) (pp. 25-32). IEEE."
-    code: 
-      link: "https://github.com/Wisc-HCI/robot-gaze-aversion"
+    tags:
+    - link: "https://github.com/Wisc-HCI/robot-gaze-aversion"
       icon: "resource/github.png"
       icon_alt: "github icon"
       text: "Example Code"
